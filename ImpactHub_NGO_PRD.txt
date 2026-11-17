@@ -1,0 +1,700 @@
+IMPACTHUB — NGO MANAGEMENT & FUNDRAISING PLATFORM
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+Version: 1.0
+
+============================================================
+1. PRODUCT OVERVIEW
+============================================================
+
+Product Name:
+ImpactHub
+
+Product Type:
+Modern NGO Management, Operations, Impact Tracking and Fundraising Platform
+
+Core Problem:
+NGOs often manage important information across spreadsheets, documents,
+WhatsApp conversations and disconnected tools. This makes it difficult to
+understand finances, donors, beneficiaries, campaigns, projects and impact
+from one place.
+
+Product Vision:
+Create one beautiful, simple and trustworthy platform where an NGO can
+organize its operational data, understand its financial position, manage
+fundraising campaigns, track beneficiaries and communicate measurable impact.
+
+Primary Value Proposition:
+"Everything your NGO needs to manage impact and raise funds — in one place."
+
+Target Users:
+1. NGO founders/directors
+2. NGO operations managers
+3. Fundraising teams
+4. Finance/admin teams
+5. Program/project managers
+6. Volunteers
+7. Future public donors/supporters
+
+============================================================
+2. MVP GOALS
+============================================================
+
+The MVP should allow an NGO to:
+
+- See its overall performance from one dashboard.
+- Manage fundraising campaigns.
+- Track donations and donors.
+- Track beneficiaries and assistance.
+- Manage projects/programs.
+- Track income and expenses.
+- Manage volunteers/team members.
+- View impact metrics and reports.
+- Create/share public fundraising campaign pages.
+- Keep the experience simple enough for non-technical NGO staff.
+
+The MVP should prioritize UX quality, clarity and realistic workflows over
+large numbers of features.
+
+============================================================
+3. DESIGN / UX DIRECTION
+============================================================
+
+Overall Design:
+Premium modern SaaS product with a warm humanitarian feel.
+
+The interface should NOT look like a generic admin template.
+
+Visual characteristics:
+- Clean light background
+- Deep navy/charcoal primary typography
+- Elegant green/teal accent
+- White cards
+- Rounded corners
+- Soft shadows
+- Generous whitespace
+- Strong visual hierarchy
+- Modern typography
+- Beautiful but readable charts
+- Subtle animations and transitions
+- Clear empty/loading/error states
+- Responsive on desktop, tablet and mobile
+
+UX principles:
+- A first-time NGO user should understand the dashboard quickly.
+- Important numbers should be visible without excessive scrolling.
+- Actions should have clear labels.
+- Forms should be simple and grouped logically.
+- Destructive actions require confirmation.
+- Data tables should have search, filters and useful sorting.
+- Avoid visual clutter.
+- Use realistic sample data so screens feel complete.
+
+Accessibility:
+- Good color contrast
+- Keyboard-friendly interactions
+- Clear focus states
+- Accessible form labels
+- Avoid relying on color alone for status
+
+============================================================
+4. INFORMATION ARCHITECTURE
+============================================================
+
+Main navigation:
+
+Dashboard
+Fundraising
+Campaigns
+Donors
+Beneficiaries
+Projects
+Finance
+Volunteers
+Reports
+Settings
+
+Global UI:
+- Search
+- Notifications
+- NGO profile/account menu
+- Breadcrumbs where useful
+- Responsive sidebar/navigation
+
+============================================================
+5. DASHBOARD
+============================================================
+
+Purpose:
+Give the NGO an immediate overview of operations, fundraising and impact.
+
+Top KPI cards:
+- Total Funds Raised
+- Funds Raised This Month
+- Active Campaigns
+- Total Donors
+- Beneficiaries Helped
+- Active Projects
+
+Dashboard sections:
+
+A. Fundraising Overview
+- Total raised
+- Fundraising goal
+- Progress percentage
+- Monthly trend chart
+
+B. Active Campaigns
+Each campaign card should show:
+- Campaign image
+- Campaign title
+- Amount raised
+- Goal
+- Percentage completed
+- Deadline
+- Beneficiaries
+- Status
+- View campaign CTA
+
+C. Donation Activity
+- Recent donations
+- Donor name
+- Amount
+- Campaign
+- Date
+- Status
+
+D. Financial Overview
+- Income
+- Expenses
+- Net balance
+- Monthly income vs expense chart
+
+E. Impact Overview
+- People helped
+- Projects completed
+- Active beneficiaries
+- Volunteer contribution
+
+F. Alerts / Tasks
+Examples:
+- Campaign deadline approaching
+- Expense pending approval
+- Follow-up required
+- New donation received
+
+============================================================
+6. FUNDRAISING
+============================================================
+
+Fundraising is a core product capability.
+
+Campaign creation flow:
+
+Step 1 — Basic Details
+- Campaign title
+- Category
+- Short description
+- Full story
+
+Step 2 — Campaign Goal
+- Target amount
+- Start date
+- End date
+- Beneficiary target
+
+Step 3 — Media
+- Cover image
+- Additional images
+- Optional video URL
+
+Step 4 — Location & Impact
+- Location
+- Problem being solved
+- Expected impact
+- Beneficiary details
+
+Step 5 — Review & Publish
+- Preview public campaign
+- Save draft
+- Publish campaign
+
+Campaign statuses:
+- Draft
+- Active
+- Paused
+- Completed
+- Expired
+
+Campaign dashboard:
+- Goal
+- Amount raised
+- Percentage funded
+- Donors
+- Days remaining
+- Beneficiaries
+- Donation trend
+- Campaign expenses
+- Campaign updates
+
+Public fundraising page:
+- Hero image
+- Campaign title
+- Story
+- Amount raised / goal
+- Progress bar
+- Donor count
+- Days remaining
+- Impact information
+- Donate Now CTA
+- Share buttons
+- NGO information
+- Trust/verification area
+
+Important:
+The MVP can use mock donation functionality.
+Do NOT integrate a real payment gateway unless explicitly requested.
+
+============================================================
+7. DONOR MANAGEMENT
+============================================================
+
+Donor list fields:
+- Name
+- Email
+- Phone
+- Total donated
+- Number of donations
+- Last donation
+- Preferred campaign/category
+- Recurring donor status
+- Status
+
+Features:
+- Search
+- Filters
+- Sorting
+- Add donor
+- Edit donor
+- View donor profile
+- Donation history
+
+Donor profile:
+- Total contribution
+- Donation timeline
+- Campaigns supported
+- Recent donation
+- Recurring status
+- Notes
+
+Future:
+- Automated receipts
+- Email communication
+- Donor segmentation
+- Donor retention analytics
+
+============================================================
+8. BENEFICIARY MANAGEMENT
+============================================================
+
+Beneficiary fields:
+- Name
+- Age
+- Gender (optional)
+- Location
+- Category
+- Program/project
+- Assistance received
+- Case status
+- Registration date
+- Follow-up date
+- Documents
+- Notes
+
+Statuses:
+- Active
+- Follow-up
+- Completed
+- Closed
+
+Privacy:
+Beneficiary information may contain sensitive personal data.
+The product should avoid exposing private beneficiary information on public
+fundraising pages unless explicitly approved.
+
+============================================================
+9. PROJECTS / PROGRAMS
+============================================================
+
+Project fields:
+- Project name
+- Description
+- Category
+- Location
+- Start date
+- End date
+- Budget
+- Amount spent
+- Remaining budget
+- Beneficiary count
+- Project lead
+- Status
+
+Project dashboard:
+- Budget utilization
+- Progress
+- Beneficiary impact
+- Expenses
+- Milestones
+- Related campaigns
+
+Statuses:
+- Planning
+- Active
+- On Hold
+- Completed
+
+============================================================
+10. FINANCE
+============================================================
+
+Finance overview:
+
+Income categories:
+- Donations
+- Grants
+- Sponsorships
+- Events
+- Other income
+
+Expense categories:
+- Program expenses
+- Food
+- Education
+- Medical
+- Operations
+- Salaries
+- Events
+- Marketing
+- Other
+
+Key metrics:
+- Total income
+- Total expenses
+- Net balance
+- Monthly burn/spend
+- Program vs operational spending
+
+Charts:
+- Income vs expense
+- Expense category breakdown
+- Monthly financial trend
+
+Transactions:
+- Date
+- Description
+- Category
+- Type
+- Amount
+- Project/campaign
+- Payment method
+- Status
+- Notes
+
+MVP:
+Use mock/local data unless a backend is already present.
+
+============================================================
+11. VOLUNTEERS / TEAM
+============================================================
+
+Fields:
+- Name
+- Profile image
+- Role
+- Email
+- Phone
+- Skills
+- Assigned project
+- Hours contributed
+- Status
+
+Features:
+- Search
+- Filter
+- Add/edit volunteer
+- Volunteer profile
+- Assigned tasks
+- Contribution summary
+
+============================================================
+12. REPORTS & IMPACT
+============================================================
+
+Impact dashboard should communicate the NGO's story through data.
+
+Metrics:
+- Funds raised
+- Beneficiaries supported
+- Projects completed
+- Active projects
+- Volunteer hours
+- Donor count
+- Campaign success rate
+
+Reports:
+- Monthly impact report
+- Fundraising performance
+- Financial summary
+- Project performance
+- Donor summary
+
+Prepare architecture for future:
+- PDF export
+- CSV export
+- Shareable reports
+
+============================================================
+13. NOTIFICATIONS
+============================================================
+
+Notification examples:
+- New donation
+- Campaign nearing deadline
+- Campaign reached milestone
+- Expense pending approval
+- Beneficiary follow-up due
+- Project deadline approaching
+
+Notification states:
+- Unread
+- Read
+
+============================================================
+14. SETTINGS
+============================================================
+
+Organization:
+- NGO name
+- Logo
+- Description
+- Address
+- Contact information
+- Website
+- Social links
+
+Account:
+- Profile
+- Password/security
+
+Team:
+- Members
+- Roles
+- Permissions
+
+Future roles:
+- Admin
+- Finance Manager
+- Fundraising Manager
+- Program Manager
+- Volunteer
+
+============================================================
+15. DATA MODEL — MVP
+============================================================
+
+Core entities:
+
+Organization
+User
+Campaign
+Donation
+Donor
+Beneficiary
+Project
+Transaction
+Volunteer
+Notification
+
+Relationships:
+
+Organization
+  -> Users
+  -> Campaigns
+  -> Donors
+  -> Beneficiaries
+  -> Projects
+  -> Transactions
+  -> Volunteers
+
+Campaign
+  -> Donations
+  -> Donors
+  -> Project (optional)
+
+Project
+  -> Beneficiaries
+  -> Transactions
+  -> Campaigns
+
+Donor
+  -> Donations
+
+============================================================
+16. SAMPLE DATA
+============================================================
+
+Use realistic fictional NGO data.
+
+Example organization:
+Hope Foundation
+
+Example campaigns:
+1. Education for 500 Children
+2. Feed 1,000 Families
+3. Medical Care for Rural Communities
+4. Winter Essentials Drive
+
+Example dashboard numbers:
+- Total funds raised: ₹12.8L
+- This month: ₹4.2L
+- Donors: 1,284
+- Beneficiaries helped: 3,842
+- Active campaigns: 4
+
+All sample names, phone numbers and personal information must be fictional.
+
+============================================================
+17. TECHNICAL EXPECTATIONS
+============================================================
+
+First inspect the existing workspace and identify:
+- Framework
+- Language
+- Package manager
+- Existing components
+- Existing routing
+- Existing styling system
+- Existing backend/API if any
+
+Do not unnecessarily replace the existing stack.
+
+Implementation principles:
+- Reusable components
+- Clear folder structure
+- Maintainable code
+- Responsive layouts
+- Proper loading states
+- Error handling
+- Empty states
+- Form validation
+- Avoid duplicated code
+- Avoid unnecessary dependencies
+
+If backend/database is not currently available:
+Build the MVP with a clean mock-data/service layer so a real backend can
+be connected later without rebuilding the UI.
+
+Do not integrate real payment processing without explicit approval.
+
+============================================================
+18. SECURITY & PRIVACY
+============================================================
+
+- Never expose API keys or secrets in frontend code.
+- Do not use real donor or beneficiary personal information.
+- Private beneficiary information must not appear publicly.
+- Financial actions should be clearly confirmed.
+- Role-based permissions should be planned for future backend implementation.
+
+============================================================
+19. MVP SUCCESS CRITERIA
+============================================================
+
+The MVP is successful when:
+
+1. A user can understand the NGO's overall status from the dashboard.
+2. A user can create and manage a fundraising campaign.
+3. A user can see campaign progress and donation activity.
+4. A user can manage donor records.
+5. A user can manage beneficiary records.
+6. A user can manage projects.
+7. A user can track income and expenses.
+8. A user can view impact metrics.
+9. The interface is responsive.
+10. The UI looks polished enough for a professional portfolio/demo.
+11. The architecture is ready for future backend/database/payment integration.
+
+============================================================
+20. IMPLEMENTATION ORDER
+============================================================
+
+Phase 1:
+- Inspect existing project
+- Confirm tech stack
+- Set architecture
+- Create design system
+- Build application shell/navigation
+
+Phase 2:
+- Dashboard
+- Mock data
+- Charts
+- KPI cards
+
+Phase 3:
+- Campaigns
+- Campaign creation
+- Campaign details
+- Public fundraising page
+
+Phase 4:
+- Donors
+- Beneficiaries
+- Projects
+
+Phase 5:
+- Finance
+- Transactions
+- Reports
+- Impact dashboard
+
+Phase 6:
+- Notifications
+- Settings
+- Responsive polish
+- Accessibility
+- Loading/error/empty states
+
+Phase 7:
+- Final UX polish
+- Test all flows
+- Remove unnecessary code/dependencies
+- Prepare for backend integration
+
+============================================================
+21. IMPORTANT INSTRUCTION FOR AI DEVELOPER
+============================================================
+
+Do not blindly generate the entire application in one step.
+
+First inspect the current repository and explain:
+1. Existing tech stack
+2. Existing project structure
+3. Existing reusable components
+4. Existing dependencies
+5. Recommended architecture
+6. Implementation plan
+
+Then implement incrementally.
+
+Before destructive changes, ask for confirmation.
+
+Prioritize:
+1. Functionality
+2. UX clarity
+3. Visual polish
+4. Maintainability
+5. Responsive behavior
+
+The final product should feel like a real SaaS product built for NGOs,
+not a simple college CRUD dashboard.
